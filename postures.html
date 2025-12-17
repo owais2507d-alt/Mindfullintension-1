@@ -185,23 +185,23 @@
                         <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg p-4 mt-2 min-w-[200px] z-10">
                             <div class="grid grid-cols-2 gap-2">
                                 <button data-filter="type"  class="hover:bg-indigo-50 nav-btn p-2 rounded">By Type</button>
-                                <button data-filter="benifit" class="hover:bg-indigo-50 p-2 nav-btn rounded">By Benefit</button>
+                                <button data-filter="benefit" class="hover:bg-indigo-50 p-2 nav-btn rounded">By Benefit</button>
                                 <button data-filter="general" class="hover:bg-indigo-50 nav-btn p-2 rounded">General</button>
-                                <button data-filter="by type"  class="hover:bg-indigo-50 nav-btn p-2 rounded">By Anatomy</button>
+                                <button data-filter="Anatomy"  class="hover:bg-indigo-50 nav-btn p-2 rounded">By Anatomy</button>
                             </div>
                         </div>
                     </div>
 
                     <script>
-const button = document.querySelectorAll('.nav-btn')
-button.forEach(btn =>{
-const category = btn.getAttribute('data-filter');
-btn.addEventListener('click', () => {   
-localStorage.setItem('category', category);
-window.location.href="postures.html";   
+// const button = document.querySelectorAll('.nav-btn')
+// button.forEach(btn =>{
+// const category = btn.getAttribute('data-filter');
+// btn.addEventListener('click', () => {   
+// localStorage.setItem('category', category);
+// window.location.href="postures.html";   
 
-}); 
-});
+// }); 
+// });
                     </script>
 
                     <a href="#"

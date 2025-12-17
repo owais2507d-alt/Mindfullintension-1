@@ -182,11 +182,21 @@
         /* Stats Counter Animation */
         .counter {
             font-variant-numeric: tabular-nums;
+       .active{
+        color: #4f46e5;
+        font-weight: 500;
+        transition: color 300ms ease;
+        }
+        .active:hover{
+        color: #4f46e5;
         }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-800">
-    <!-- Navigation (Same as home page) -->
+   .
+</style>
+<body class="bg-gray-50 text-gray-800">
+    <!-- Navigation -->
     <nav class="sticky top-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
         <div class="container mx-auto px-4 py-4">
             <div class="flex justify-between items-center">
@@ -194,38 +204,27 @@
                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center">
                         <i class="fas fa-brain text-white text-xl"></i>
                     </div>
-                    <span class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Healthy Mind</span>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Mindfullintensions</span>
                 </div>
                 
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Home</a>
-                    <a href="about.html" class="text-indigo-600 font-medium transition-colors duration-300">About Us</a>
+                    <a href="about.html" class="active">About Us</a>
                     
                     <div class="relative group">
-                         <button class="text-gray-700 hover:text-indigo-600 font-medium flex items-center transition-colors duration-300">
+                        <button class="text-gray-700 hover:text-indigo-600 font-medium flex items-center transition-colors duration-300">
                             Postures <i class="fas fa-chevron-down ml-1 text-xs"></i>
                         </button>
                         <div class="absolute hidden group-hover:block bg-white shadow-xl rounded-lg p-4 mt-2 min-w-[200px] z-10">
                             <div class="grid grid-cols-2 gap-2">
-                                <button data-filter="type"  class="hover:bg-indigo-50 nav-btn p-2 rounded">By Type</button>
-                                <button data-filter="benifit" class="hover:bg-indigo-50 p-2 nav-btn rounded">By Benefit</button>
+                                <button data-filter="type" class="hover:bg-indigo-50 nav-btn p-2 rounded">By Type</button>
+                                <button data-filter="benefit" class="hover:bg-indigo-50 nav-btn p-2 rounded">By Benefit</button>
                                 <button data-filter="general" class="hover:bg-indigo-50 nav-btn p-2 rounded">General</button>
-                                <button data-filter="by type"  class="hover:bg-indigo-50 nav-btn p-2 rounded">By Anatomy</button>
+                                <button data-filter="anatomy" class="hover:bg-indigo-50 nav-btn p-2 rounded">By Anatomy</button>
                             </div>
                         </div>
                     </div>
 
-                    <script>
-const button = document.querySelectorAll('.nav-btn')
-button.forEach(btn =>{
-const category = btn.getAttribute('data-filter');
-btn.addEventListener('click', () => {   
-localStorage.setItem('category', category);
-window.location.href="postures.html";   
-
-}); 
-});
-                    </script>
                     <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Courses</a>
                     <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Meditation</a>
                     <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Books</a>
@@ -246,20 +245,24 @@ window.location.href="postures.html";
             <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
                 <div class="flex flex-col space-y-4">
                     <a href="index.html" class="text-gray-700 hover:text-indigo-600 font-medium">Home</a>
-                    <a href="about.html" class="text-indigo-600 font-medium">About Us</a>
+                    <a href="about.html" class="">About Us</a>
                     <div class="flex flex-col space-y-2">
                         <span class="text-gray-700 font-medium">Postures</span>
                         <div class="flex flex-wrap gap-2 ml-4">
-                            <a href="#" class="text-sm bg-gray-100 px-3 py-1 rounded-full">By Type</a>
-                            <a href="#" class="text-sm bg-gray-100 px-3 py-1 rounded-full">By Benefit</a>
-                            <a href="#" class="text-sm bg-gray-100 px-3 py-1 rounded-full">General</a>
-                            <a href="#" class="text-sm bg-gray-100 px-3 py-1 rounded-full">By Anatomy</a>
+                            <a href="postures.html" class="text-sm bg-gray-100 px-3 py-1 rounded-full hover:bg-indigo-50">By Type</a>
+                            <a href="postures.html" class="text-sm bg-gray-100 px-3 py-1 rounded-full hover:bg-indigo-50">By Benefit</a>
+                            <a href="postures.html" class="text-sm bg-gray-100 px-3 py-1 rounded-full hover:bg-indigo-50">General</a>
+                            <a href="postures.html" class="text-sm bg-gray-100 px-3 py-1 rounded-full hover:bg-indigo-50">By Anatomy</a>
                         </div>
                     </div>
                     <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium">Courses</a>
                     <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium">Meditation</a>
                     <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium">Books</a>
                     <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>digo-600 font-medium">Contact</a>
                     <button class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-2 rounded-full font-medium mt-2">
                         Explore Poses
                     </button>
