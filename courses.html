@@ -299,10 +299,10 @@
                     <div class="flex flex-col space-y-2">
                         <span class="text-gray-700 font-medium">Postures</span>
                         <div class="flex flex-wrap gap-2 ml-4">
-                            <a href="#" class="text-sm bg-gray-100 px-3 py-1 rounded-full">By Type</a>
-                            <a href="#" class="text-sm bg-gray-100 px-3 py-1 rounded-full">By Benefit</a>
-                            <a href="#" class="text-sm bg-gray-100 px-3 py-1 rounded-full">General</a>
-                            <a href="#" class="text-sm bg-gray-100 px-3 py-1 rounded-full">By Anatomy</a>
+                            <a href="/postures.html" class="text-sm bg-gray-100 px-3 py-1 rounded-full">By Type</a>
+                            <a href="/postures.html" class="text-sm bg-gray-100 px-3 py-1 rounded-full">By Benefit</a>
+                            <a href="/postures.html" class="text-sm bg-gray-100 px-3 py-1 rounded-full">General</a>
+                            <a href="/postures.html" class="text-sm bg-gray-100 px-3 py-1 rounded-full">By Anatomy</a>
                         </div>
                     </div>
                     <a href="/courses.html" class="text-gray-700 hover:text-indigo-600 font-medium">Courses</a>
@@ -323,7 +323,7 @@
         <div class="absolute inset-0 bg-black/20"></div>
         <div class="container mx-auto px-4 relative z-10">
             <div class="text-center max-w-4xl mx-auto" data-aos="fade-up">
-                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">About Mindfullintension</h1>
+                <h1 class="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">Our Courses</h1>
                 <p class="text-xl md:text-2xl mb-8 opacity-90">Pioneering Holistic Wellness for Body and Mind</p>
                 <p class="text-lg mb-10 opacity-80">We are a passionate team dedicated to helping individuals achieve
                     balance, clarity, and holistic health through the integration of yoga, meditation, and modern
@@ -893,6 +893,14 @@
                     '<i class="fas fa-bars text-2xl"></i>' :
                     '<i class="fas fa-times text-2xl"></i>';
             });
+              // Scroll to section
+        document.getElementById('scroll-to-story').addEventListener('click', function() {
+            document.getElementById('our-story').scrollIntoView({ behavior: 'smooth' });
+        });
+        
+        document.getElementById('scroll-to-team').addEventListener('click', function() {
+            document.getElementById('our-team').scrollIntoView({ behavior: 'smooth' });
+        });
 
 
             // Back to top button
@@ -920,7 +928,7 @@
                 window.scrollTo({ top: 0, behavior: 'smooth' });
             });
 
-            // Animated counter
+            // Animated counter 
             const counters = document.querySelectorAll('.counter');
             const speed = 200; // The lower the slower
 
