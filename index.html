@@ -131,7 +131,7 @@
                     <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center">
                         <i class="fas fa-brain text-white text-xl"></i>
                     </div>
-                    <span class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Healthy Mind</span>
+                    <span class="text-2xl font-bold bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">Mindfullintensions</span>
                 </div>
                 
                 <div class="hidden md:flex items-center space-x-8">
@@ -169,10 +169,11 @@
                     <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Books</a>
                     <a href="#" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Contact</a>
                     
-                    <button id="btn-btn" class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:scale-105">
+                    <a href="postures.html" id="btn-btn" class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:scale-105">
                         Explore Poses
-                    </button>
+                    </a>
                 </div>
+              
                 
                 <!-- Mobile Menu Button -->
                 <button id="mobile-menu-btn" class="md:hidden text-gray-700">
@@ -462,19 +463,15 @@
             <div class="flex flex-col lg:flex-row items-center gap-12">
                 <div class="lg:w-1/2" data-aos="fade-right">
                     <div class="relative">
-                        <div class="rounded-3xl overflow-hidden shadow-2xl">
-                            <div class="h-64 md:h-80 bg-gradient-to-r from-blue-400 to-indigo-500 flex items-center justify-center">
-                                <i class="fas fa-om text-white text-8xl opacity-30"></i>
-                            </div>
-                        </div>
-                        <div class="absolute -bottom-6 -right-6 w-32 h-32 bg-gradient-to-r from-green-400 to-teal-300 rounded-full flex items-center justify-center animate-float">
-                            <i class="fas fa-spa text-white text-4xl"></i>
-                        </div>
-                        <div class="absolute -top-6 -left-6 w-24 h-24 bg-gradient-to-r from-yellow-400 to-orange-300 rounded-full flex items-center justify-center animate-float" style="animation-delay: 1s;">
-                            <i class="fas fa-wind text-white text-3xl"></i>
-                        </div>
+                       <img src="/images/meditataions-pic/meditating1.jpg"  alt="Meditation Image" class="rounded-2xl medi shadow-lg w-full">
+                        <div class="absolute inset-0 bg-black/20 rounded-2xl"></div>
                     </div>
                 </div>
+                <style>
+                    .medi{
+                        height: 470px;
+                    }
+                </style>
                 <div class="lg:w-1/2" data-aos="fade-left">
                     <h2 class="text-3xl md:text-4xl font-bold mb-6">Meditation for Inner Peace</h2>
                     <p class="text-gray-600 mb-8">Discover the transformative power of meditation with our guided sessions designed to calm your mind, reduce stress, and enhance overall wellbeing.</p>
@@ -650,94 +647,109 @@
     </section>
 
     <!-- Footer -->
-    <footer class="bg-gray-900 text-white py-12">
-        <div class="container mx-auto px-4">
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Column 1 -->
-                <div>
-                    <div class="flex items-center space-x-2 mb-6">
-                        <div class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center">
-                            <i class="fas fa-brain text-white"></i>
+        <footer class="bg-gray-900 text-white py-12">
+            <div class="container mx-auto px-4">
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Column 1 -->
+                    <div>
+                        <div class="flex items-center space-x-2 mb-6">
+                            <div
+                                class="w-10 h-10 rounded-full bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center">
+                                <i class="fas fa-brain text-white"></i>
+                            </div>
+                            <span class="text-2xl font-bold">Mindfullintensions</span>
                         </div>
-                        <span class="text-2xl font-bold">Mindfullintension</span>
-                    </div>
-                    <p class="text-gray-400 mb-6">Your path to holistic wellness through yoga, meditation, and mindful living.</p>
-                    <div class="flex space-x-4">
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                            <i class="fab fa-facebook-f"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                            <i class="fab fa-twitter"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="#" class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                    </div>
-                </div>
-                
-                <!-- Column 2 -->
-                <div>
-                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
-                    <ul class="space-y-3">
-                        <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a></li>
-                        <li><a href="about.html" class="text-white font-medium transition-colors">About Us</a></li>
-                        <li><a href="/postures.html"class="text-gray-400 hover:text-white transition-colors">Postures</a></li>
-                        <li><a href="/courses.html" class="text-gray-400 hover:text-white transition-colors">Courses</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Meditation</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Books</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 3 -->
-                <div>
-                    <h4 class="text-lg font-bold mb-6">Resources</h4>
-                    <ul class="space-y-3">
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Research</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Instructors</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
-                        <li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQs</a></li>
-                    </ul>
-                </div>
-                
-                <!-- Column 4 -->
-                <div>
-                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
-                    <ul class="space-y-3">
-                        <li class="flex items-center">
-                            <i class="fas fa-map-marker-alt text-indigo-400 mr-3"></i>
-                            <span class="text-gray-400">Jut Line Karachi</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-phone text-indigo-400 mr-3"></i>
-                            <span class="text-gray-400">03492000168</span>
-                        </li>
-                        <li class="flex items-center">
-                            <i class="fas fa-envelope text-indigo-400 mr-3"></i>
-                            <span class="text-gray-400"></span>
-                        </li>
-                    </ul>
-                    <div class="mt-8">
-                        <p class="text-gray-400 mb-3">Subscribe to our newsletter</p>
-                        <div class="flex">
-                            <input type="email" placeholder="Your email" class="bg-gray-800 text-white px-4 py-2 rounded-l-lg w-full focus:outline-none">
-                            <button class="bg-gradient-to-r from-indigo-500 to-purple-500 px-4 py-2 rounded-r-lg font-medium">
-                                <i class="fas fa-paper-plane"></i>
-                            </button>
+                        <p class="text-gray-400 mb-6">Your path to holistic wellness through yoga, meditation, and
+                            mindful
+                            living.</p>
+                        <div class="flex space-x-4">
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#"
+                                class="w-10 h-10 rounded-full bg-gray-800 flex items-center justify-center hover:bg-indigo-600 transition-colors">
+                                <i class="fab fa-youtube"></i>
+                            </a>
                         </div>
                     </div>
+
+                    <!-- Column 2 -->
+                    <div>
+                        <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                        <ul class="space-y-3">
+                            <li><a href="index.html" class="text-gray-400 hover:text-white transition-colors">Home</a>
+                            </li>
+                            <li><a href="about.html" class="text-white font-medium transition-colors">About Us</a></li>
+                            <li><a href="/postures.html"
+                                    class="text-gray-400 hover:text-white transition-colors">Postures</a></li>
+                            <li><a href="/courses.html"
+                                    class="text-gray-400 hover:text-white transition-colors">Courses</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Meditation</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Books</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3 -->
+                    <div>
+                        <h4 class="text-lg font-bold mb-6">Resources</h4>
+                        <ul class="space-y-3">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Research</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Instructors</a>
+                            </li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Community</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">FAQs</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4 -->
+                    <div>
+                        <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-center">
+                                <i class="fas fa-map-marker-alt text-indigo-400 mr-3"></i>
+                                <span class="text-gray-400">Jut Line Karachi</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-phone text-indigo-400 mr-3"></i>
+                                <span class="text-gray-400">03482000168</span>
+                            </li>
+                            <li class="flex items-center">
+                                <i class="fas fa-envelope text-indigo-400 mr-3"></i>
+                                <span class="text-gray-400">malik-owais-2508d.netlify.app/</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8">
+                            <p class="text-gray-400 mb-3">Subscribe to our newsletter</p>
+                            <div class="flex">
+                                <input type="email" placeholder="owais2507d@aptechgdn.net"
+                                    class="bg-gray-800 text-white px-4 py-2 rounded-l-lg w-full focus:outline-none">
+                                <button
+                                    class="bg-gradient-to-r from-indigo-500 to-purple-500 px-4 py-2 rounded-r-lg font-medium">
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
+                    <p>&copy; 2025 Mindfullintensions. All rights reserved. Designed By <i
+                            class="fas fa-heart text-red-500 mx-1"></i> Malik Owais.</p>
                 </div>
             </div>
-            
-            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-500 text-sm">
-                <p>&copy; 2023 Healthy Mind. All rights reserved.  Designed By <i class="fas fa-heart text-red-500 mx-1"></i> Malik owais.</p>
-            </div>
-        </div>
-    </footer>
+        </footer>
+
 
     <!-- Posture Details Modal -->
     <div id="posture-modal" class="modal">
@@ -811,12 +823,17 @@
                         
                         <div class="mb-6">
                             <h4 class="text-lg font-bold mb-3">Practice Video</h4>
-                            <div class="aspect-video bg-gradient-to-r from-gray-200 to-gray-300 rounded-xl flex items-center justify-center">
-                                <div class="text-center">
-                                    <i class="fas fa-play-circle text-gray-500 text-6xl mb-3"></i>
-                                    <p class="text-gray-600">Video demonstration</p>
-                                </div>
-                            </div>
+                           <div class="aspect-video rounded-xl overflow-hidden">
+  <iframe 
+    class="w-full h-full"
+    src="https://www.youtube.com/embed/8of5w7RgcTc"
+    title="YouTube video"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen>
+  </iframe>
+</div>
+
                         </div>
                         
                         <div class="flex flex-wrap gap-4">

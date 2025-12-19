@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Us - Healthy Mind</title>
+    <title>About Us -MindFULLINTENSIONS</title>
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- AOS (Animate On Scroll) -->
@@ -39,6 +39,16 @@
         body {
             overflow-x: hidden;
         }
+
+                .active{
+        color: #4f46e5;       
+        font-weight: 500;        
+        transition: color 300ms ease;
+    }
+    
+    .active:hover{
+        color: #4f46e5;         
+    }
 
         /* Custom Animations */
         @keyframes float {
@@ -237,7 +247,7 @@
                 <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html"
                         class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Home</a>
-                    <a href="about.html" class="text-indigo-600 font-medium transition-colors duration-300">About Us</a>
+                    <a href="about.html" class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-30">About Us</a>
 
                     <div class="relative group">
                         <button
@@ -271,7 +281,7 @@
                         });
                     </script>
                     <a href="/courses.html"
-                        class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Courses</a>
+                        class="active">Courses</a>
                     <a href="#"
                         class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Meditation</a>
                     <a href="#"
@@ -279,10 +289,10 @@
                     <a href="#"
                         class="text-gray-700 hover:text-indigo-600 font-medium transition-colors duration-300">Contact</a>
 
-                    <button
+                    <a href="postures.html"
                         class="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-2 rounded-full font-medium hover:shadow-lg transition-all duration-300 hover:scale-105">
                         Explore Poses
-                    </button>
+                </a>
                 </div>
 
                 <!-- Mobile Menu Button -->
@@ -400,7 +410,7 @@
                                 class="bg-green-100 text-green-800 text-sm font-medium px-4 py-1 rounded-full">Intermediate</span>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Mental Peace Yoga</h3>
-                        <p class="text-gray-600 mb-6">A calm yoga practice designed to relax the mind, reduce stress,
+                        <p class="text-gray-600 mb-6">A calm yoga practice designed to relax the mind, reduce stress, <br>
                             and bring inner peace..</p>
                         <div class="mb-6">
                             <div class="flex justify-between text-sm mb-2">
@@ -429,7 +439,7 @@
                                 class="bg-green-100 text-green-800 text-sm font-medium px-4 py-1 rounded-full">Intermediate</span>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Anxiety Relief Program</h3>
-                        <p class="text-gray-600 mb-6">A guided program using yoga, breathing, and mindfulness techniques
+                        <p class="text-gray-600 mb-6">A guided program using yoga, breathing, and mindfulness techniques <br>
                             to reduce anxiety and emotional tension.</p>
                         <div class="mb-6">
                             <div class="flex justify-between text-sm mb-2">
@@ -487,7 +497,7 @@
                                 class="bg-yellow-100 text-green-800 text-sm font-medium px-4 py-1 rounded-full">Intermediate</span>
                         </div>
                         <h3 class="text-xl font-bold mb-4">Weight Management Yoga</h3>
-                        <p class="text-gray-600 mb-6">A balanced yoga routine focused on fat loss, metabolism
+                        <p class="text-gray-600 mb-6">A balanced yoga routine focused on fat loss, metabolism <br>
                             improvement, and overall body fitness.</p>
                         <div class="mb-6">
                             <div class="flex justify-between text-sm mb-2">
@@ -542,225 +552,250 @@
             </div>
         </div>
 
-<!-- Our Team Section -->
-    <section id="our-team" class="py-16 md:py-24 bg-gray-50">
-        <div class="container mx-auto px-4">
-            <div class="text-center mb-16" data-aos="fade-up">
-                <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
-                <p class="text-gray-600 max-w-3xl mx-auto">Passionate experts dedicated to your wellness journey</p>
+        <!-- Our Team Section -->
+        <section id="our-team" class="py-16 md:py-24 bg-gray-50">
+            <div class="container mx-auto px-4">
+                <div class="text-center mb-16" data-aos="fade-up">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
+                    <p class="text-gray-600 max-w-3xl mx-auto">Passionate experts dedicated to your wellness journey</p>
+                </div>
+
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member 1 -->
+                    <div class="card-3d h-96" data-aos="fade-up" data-aos-delay="100">
+                        <div class="card-3d-inner w-full h-full">
+                            <div class="card-3d-front bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                                <div
+                                    class="h-48 bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center">
+                                    <div
+                                        class="w-32 h-32 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
+                                        <img src="/images/instructor pics/owais.jpg.jpeg" alt="Malik owais" width="120"
+                                            height="120" class="rounded-full object-cover" />
+                                    </div>
+                                </div>
+                                <div class="p-6 flex-grow">
+                                    <h3 class="text-xl font-bold mb-1">Malik Owais</h3>
+                                    <p class="text-indigo-600 font-medium mb-3">Founder & Lead Instructor</p>
+                                    <p class="text-gray-600 text-sm">500+ hours yoga training, mindfulness coach</p>
+                                </div>
+                                <div class="px-6 pb-6">
+                                    <div class="flex space-x-3">
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="card-3d-back bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl shadow-lg p-6 text-white flex flex-col justify-center">
+                                <h3 class="text-xl font-bold mb-3">Specializations</h3>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Hatha & Vinyasa Yoga</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Mindfulness Meditation</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Stress Management</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Breathwork Techniques</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 2 -->
+                    <div class="card-3d h-96" data-aos="fade-up" data-aos-delay="200">
+                        <div class="card-3d-inner w-full h-full">
+                            <div class="card-3d-front bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                                <div
+                                    class="h-48 bg-gradient-to-r from-green-500 to-teal-500 flex items-center justify-center">
+                                    <div
+                                        class="w-32 h-32 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
+                                        <i class="fas fa-user text-white text-6xl"></i>
+                                    </div>
+                                </div>
+                                <div class="p-6 flex-grow">
+                                    <h3 class="text-xl font-bold mb-1">Hamayl</h3>
+                                    <p class="text-green-600 font-medium mb-3">Meditation Specialist</p>
+                                    <p class="text-gray-600 text-sm">MBSR certified, 10+ years experience</p>
+                                </div>
+                                <div class="px-6 pb-6">
+                                    <div class="flex space-x-3">
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="card-3d-back bg-gradient-to-r from-green-500 to-teal-500 rounded-xl shadow-lg p-6 text-white flex flex-col justify-center">
+                                <h3 class="text-xl font-bold mb-3">Specializations</h3>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Mindfulness-Based Stress Reduction</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Sleep Meditation</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Anxiety Management</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Guided Visualization</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 3 -->
+                    <div class="card-3d h-96" data-aos="fade-up" data-aos-delay="300">
+                        <div class="card-3d-inner w-full h-full">
+                            <div class="card-3d-front bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                                <div
+                                    class="h-48 bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
+                                    <div
+                                        class="w-32 h-32 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
+                                        <i class="fas fa-user text-white text-6xl"></i>
+                                    </div>
+                                </div>
+                                <div class="p-6 flex-grow">
+                                    <h3 class="text-xl font-bold mb-1">Esam</h3>
+                                    <p class="text-purple-600 font-medium mb-3">Yoga Anatomy Expert</p>
+                                    <p class="text-gray-600 text-sm">Physical therapist, yoga therapist</p>
+                                </div>
+                                <div class="px-6 pb-6">
+                                    <div class="flex space-x-3">
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="card-3d-back bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl shadow-lg p-6 text-white flex flex-col justify-center">
+                                <h3 class="text-xl font-bold mb-3">Specializations</h3>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Therapeutic Yoga</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Injury Prevention</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Posture Correction</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Anatomy & Physiology</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Team Member 4 -->
+                    <div class="card-3d h-96" data-aos="fade-up" data-aos-delay="400">
+                        <div class="card-3d-inner w-full h-full">
+                            <div class="card-3d-front bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
+                                <div
+                                    class="h-48 bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
+                                    <div
+                                        class="w-32 h-32 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
+                                        <i class="fas fa-user text-white text-6xl"></i>
+                                    </div>
+                                </div>
+                                <div class="p-6 flex-grow">
+                                    <h3 class="text-xl font-bold mb-1">Hunain</h3>
+                                    <p class="text-cyan-600 font-medium mb-3">Wellness Coach</p>
+                                    <p class="text-gray-600 text-sm">Nutritionist, holistic health practitioner</p>
+                                </div>
+                                <div class="px-6 pb-6">
+                                    <div class="flex space-x-3">
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600">
+                                            <i class="fab fa-linkedin-in"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600">
+                                            <i class="fab fa-twitter"></i>
+                                        </a>
+                                        <a href="#"
+                                            class="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600">
+                                            <i class="fas fa-envelope"></i>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div
+                                class="card-3d-back bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl shadow-lg p-6 text-white flex flex-col justify-center">
+                                <h3 class="text-xl font-bold mb-3">Specializations</h3>
+                                <ul class="space-y-2 text-sm">
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Holistic Nutrition</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Ayurvedic Principles</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Lifestyle Coaching</span>
+                                    </li>
+                                    <li class="flex items-center">
+                                        <i class="fas fa-check mr-2"></i>
+                                        <span>Stress & Burnout Recovery</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            
-            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
-                <!-- Team Member 1 -->
-                <div class="card-3d h-96" data-aos="fade-up" data-aos-delay="100">
-                    <div class="card-3d-inner w-full h-full">
-                        <div class="card-3d-front bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="h-48 bg-gradient-to-r from-indigo-500 to-purple-500 flex items-center justify-center">
-                                <div class="w-32 h-32 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
-                                 <img src="/images/instructor pics/owais.jpg.jpeg" alt="Malik owais" width="120" height="120" class="rounded-full object-cover"/>
-                                </div>
-                            </div>
-                            <div class="p-6 flex-grow">
-                                <h3 class="text-xl font-bold mb-1">Malik Owais</h3>
-                                <p class="text-indigo-600 font-medium mb-3">Founder & Lead Instructor</p>
-                                <p class="text-gray-600 text-sm">500+ hours yoga training, mindfulness coach</p>
-                            </div>
-                            <div class="px-6 pb-6">
-                                <div class="flex space-x-3">
-                                    <a href="#" class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="#" class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="w-8 h-8 rounded-full bg-indigo-100 flex items-center justify-center text-indigo-600">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-3d-back bg-gradient-to-r from-indigo-500 to-purple-500 rounded-xl shadow-lg p-6 text-white flex flex-col justify-center">
-                            <h3 class="text-xl font-bold mb-3">Specializations</h3>
-                            <ul class="space-y-2 text-sm">
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Hatha & Vinyasa Yoga</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Mindfulness Meditation</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Stress Management</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Breathwork Techniques</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Team Member 2 -->
-                <div class="card-3d h-96" data-aos="fade-up" data-aos-delay="200">
-                    <div class="card-3d-inner w-full h-full">
-                        <div class="card-3d-front bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="h-48 bg-gradient-to-r from-green-500 to-teal-500 flex items-center justify-center">
-                                <div class="w-32 h-32 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
-                                    <i class="fas fa-user text-white text-6xl"></i>
-                                </div>
-                            </div>
-                            <div class="p-6 flex-grow">
-                                <h3 class="text-xl font-bold mb-1">Hamayl</h3>
-                                <p class="text-green-600 font-medium mb-3">Meditation Specialist</p>
-                                <p class="text-gray-600 text-sm">MBSR certified, 10+ years experience</p>
-                            </div>
-                            <div class="px-6 pb-6">
-                                <div class="flex space-x-3">
-                                    <a href="#" class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="#" class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="w-8 h-8 rounded-full bg-green-100 flex items-center justify-center text-green-600">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-3d-back bg-gradient-to-r from-green-500 to-teal-500 rounded-xl shadow-lg p-6 text-white flex flex-col justify-center">
-                            <h3 class="text-xl font-bold mb-3">Specializations</h3>
-                            <ul class="space-y-2 text-sm">
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Mindfulness-Based Stress Reduction</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Sleep Meditation</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Anxiety Management</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Guided Visualization</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Team Member 3 -->
-                <div class="card-3d h-96" data-aos="fade-up" data-aos-delay="300">
-                    <div class="card-3d-inner w-full h-full">
-                        <div class="card-3d-front bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="h-48 bg-gradient-to-r from-purple-500 to-pink-500 flex items-center justify-center">
-                                <div class="w-32 h-32 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
-                                    <i class="fas fa-user text-white text-6xl"></i>
-                                </div>
-                            </div>
-                            <div class="p-6 flex-grow">
-                                <h3 class="text-xl font-bold mb-1">Esam</h3>
-                                <p class="text-purple-600 font-medium mb-3">Yoga Anatomy Expert</p>
-                                <p class="text-gray-600 text-sm">Physical therapist, yoga therapist</p>
-                            </div>
-                            <div class="px-6 pb-6">
-                                <div class="flex space-x-3">
-                                    <a href="#" class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="#" class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="w-8 h-8 rounded-full bg-purple-100 flex items-center justify-center text-purple-600">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-3d-back bg-gradient-to-r from-purple-500 to-pink-500 rounded-xl shadow-lg p-6 text-white flex flex-col justify-center">
-                            <h3 class="text-xl font-bold mb-3">Specializations</h3>
-                            <ul class="space-y-2 text-sm">
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Therapeutic Yoga</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Injury Prevention</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Posture Correction</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Anatomy & Physiology</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-                
-                <!-- Team Member 4 -->
-                <div class="card-3d h-96" data-aos="fade-up" data-aos-delay="400">
-                    <div class="card-3d-inner w-full h-full">
-                        <div class="card-3d-front bg-white rounded-xl shadow-lg overflow-hidden flex flex-col">
-                            <div class="h-48 bg-gradient-to-r from-cyan-500 to-blue-500 flex items-center justify-center">
-                                <div class="w-32 h-32 rounded-full bg-white/20 border-4 border-white flex items-center justify-center">
-                                    <i class="fas fa-user text-white text-6xl"></i>
-                                </div>
-                            </div>
-                            <div class="p-6 flex-grow">
-                                <h3 class="text-xl font-bold mb-1">Hunain</h3>
-                                <p class="text-cyan-600 font-medium mb-3">Wellness Coach</p>
-                                <p class="text-gray-600 text-sm">Nutritionist, holistic health practitioner</p>
-                            </div>
-                            <div class="px-6 pb-6">
-                                <div class="flex space-x-3">
-                                    <a href="#" class="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600">
-                                        <i class="fab fa-linkedin-in"></i>
-                                    </a>
-                                    <a href="#" class="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600">
-                                        <i class="fab fa-twitter"></i>
-                                    </a>
-                                    <a href="#" class="w-8 h-8 rounded-full bg-cyan-100 flex items-center justify-center text-cyan-600">
-                                        <i class="fas fa-envelope"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="card-3d-back bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl shadow-lg p-6 text-white flex flex-col justify-center">
-                            <h3 class="text-xl font-bold mb-3">Specializations</h3>
-                            <ul class="space-y-2 text-sm">
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Holistic Nutrition</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Ayurvedic Principles</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Lifestyle Coaching</span>
-                                </li>
-                                <li class="flex items-center">
-                                    <i class="fas fa-check mr-2"></i>
-                                    <span>Stress & Burnout Recovery</span>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
+        </section>
 
 
 
@@ -893,14 +928,14 @@
                     '<i class="fas fa-bars text-2xl"></i>' :
                     '<i class="fas fa-times text-2xl"></i>';
             });
-              // Scroll to section
-        document.getElementById('scroll-to-story').addEventListener('click', function() {
-            document.getElementById('our-story').scrollIntoView({ behavior: 'smooth' });
-        });
-        
-        document.getElementById('scroll-to-team').addEventListener('click', function() {
-            document.getElementById('our-team').scrollIntoView({ behavior: 'smooth' });
-        });
+            // Scroll to section
+            document.getElementById('scroll-to-story').addEventListener('click', function () {
+                document.getElementById('our-story').scrollIntoView({ behavior: 'smooth' });
+            });
+
+            document.getElementById('scroll-to-team').addEventListener('click', function () {
+                document.getElementById('our-team').scrollIntoView({ behavior: 'smooth' });
+            });
 
 
             // Back to top button
