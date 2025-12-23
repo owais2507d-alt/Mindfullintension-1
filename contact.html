@@ -347,8 +347,9 @@
                     <h2 class="text-3xl font-bold mb-2">Send Us a Message</h2>
                     <p class="text-gray-600 mb-8">Fill out the form below and we'll get back to you as soon as possible.</p>
                     
-                    <form id="contact-form" class="space-y-6">
-                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <form action="https://api.web3forms.com/submit" method="POST" id="contact-form" class="space-y-6">
+                        <input type="hidden" name="access_key" value="3846456b-2df2-4dc1-a29c-413d0a9112cc">
+                           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
                             <div>
                                 <label for="name" class="block text-gray-700 font-medium mb-2">Your Name *</label>
                                 <input type="text" id="name" name="name" required 
